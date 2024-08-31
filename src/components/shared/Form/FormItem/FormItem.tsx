@@ -21,7 +21,11 @@ const FormItem: React.FC<Props> = ({
   };
 
   const handleClick = () => {
-    setSelectedCheckbox(`${first} ${last}`);
+    if (`${first} ${last}` === selectedCheckbox) {
+      setSelectedCheckbox(null);
+    } else {
+      setSelectedCheckbox(`${first} ${last}`);
+    }
   };
 
   return (

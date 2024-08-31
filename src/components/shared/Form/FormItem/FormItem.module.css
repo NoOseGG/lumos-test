@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 29px 10px;
+  border-radius: 16px;
+  box-shadow: 0px 2.09px 11.06px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+  font: var(--subtitle);
+  color: var(--black);
+}
+
+.input {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.input:checked {
+  border: none;
+  background-image: url("/icons/checked.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

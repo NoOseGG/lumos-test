@@ -20,8 +20,12 @@ const FormItem: React.FC<Props> = ({
     setSelectedCheckbox(selectedCheckbox === value ? null : value);
   };
 
+  const handleClick = () => {
+    setSelectedCheckbox(`${first} ${last}`);
+  };
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={handleClick}>
       <input
         className={styles.input}
         type="checkbox"
